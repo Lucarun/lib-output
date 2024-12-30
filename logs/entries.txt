@@ -1,0 +1,3416 @@
+<org.apache.hadoop.fs.s3a.adapter.V1ToV2AwsCredentialProviderAdapter: software.amazon.awssdk.auth.credentials.AwsCredentials resolveCredentials()>
+<org.apache.hadoop.fs.s3a.adapter.V1ToV2AwsCredentialProviderAdapter: software.amazon.awssdk.auth.credentials.AwsCredentials convertToV2Credentials(com.amazonaws.auth.AWSCredentials)>
+<org.modeshape.jcr.value.binary.S3BinaryStore$1: org.modeshape.jcr.value.BinaryKey next()>
+<org.modeshape.jcr.value.binary.S3BinaryStore: void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+<org.modeshape.jcr.value.binary.S3BinaryStore: java.lang.String getStoredMimeType(org.modeshape.jcr.value.BinaryValue)>
+<org.modeshape.jcr.value.binary.S3BinaryStore: void storeMimeType(org.modeshape.jcr.value.BinaryValue,java.lang.String)>
+<org.modeshape.jcr.value.binary.S3BinaryStore: void setS3ObjectUserProperty(org.modeshape.jcr.value.BinaryKey,java.lang.String,java.lang.String)>
+<org.modeshape.jcr.value.binary.S3BinaryStore: java.lang.String getExtractedText(org.modeshape.jcr.value.BinaryValue)>
+<org.modeshape.jcr.value.binary.S3BinaryStore: org.modeshape.jcr.value.BinaryValue storeValue(java.io.InputStream,boolean)>
+<org.modeshape.jcr.value.binary.S3BinaryStore: java.io.InputStream getInputStream(org.modeshape.jcr.value.BinaryKey)>
+<org.modeshape.jcr.value.binary.S3BinaryStore: void removeValuesUnusedLongerThan(long,java.util.concurrent.TimeUnit)>
+<org.modeshape.jcr.value.binary.S3BinaryStore: java.lang.Iterable getAllBinaryKeys()>
+<com.amazon.redshift.CredentialsHolder$SessionCredentialsHolder: java.lang.String getSessionToken()>
+<com.amazon.redshift.core.v3.ConnectionFactoryImpl: java.util.List getParametersForStartup(java.lang.String,java.lang.String,java.util.Properties,boolean)>
+<com.amazon.redshift.core.ServerlessIamHelper: void <init>(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazon.redshift.logger.RedshiftLogger,com.amazonaws.auth.AWSCredentialsProvider)>
+<com.amazon.redshift.core.ServerlessIamHelper: void describeConfiguration(com.amazon.redshift.core.RedshiftJDBCSettings)>
+<com.amazon.redshift.core.ServerlessIamHelper: void getCredentialsResult(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazon.redshift.core.IamHelper$CredentialProviderType,boolean)>
+<com.amazon.redshift.core.NativeAuthPluginHelper: java.lang.String getNativeAuthPluginCredentials(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazon.redshift.logger.RedshiftLogger,java.lang.String)>
+<com.amazon.redshift.core.PluginProfilesConfigFile: void <init>(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.PluginProfilesConfigFile: com.amazon.redshift.CredentialsHolder getCredentials(java.lang.String)>
+<com.amazon.redshift.core.PluginProfilesConfigFile: com.amazon.redshift.CredentialsHolder assumeRole(com.amazonaws.auth.profile.internal.BasicProfile,com.amazonaws.auth.AWSCredentialsProvider)>
+<com.amazon.redshift.core.IdpAuthHelper: com.amazon.redshift.util.RedshiftProperties setAuthProperties(com.amazon.redshift.util.RedshiftProperties,com.amazon.redshift.core.RedshiftJDBCSettings,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.IdpAuthHelper: com.amazon.redshift.util.RedshiftProperties readAuthProfile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.amazon.redshift.logger.RedshiftLogger,com.amazon.redshift.util.RedshiftProperties)>
+<com.amazon.redshift.core.IamHelper: com.amazon.redshift.util.RedshiftProperties setIAMProperties(com.amazon.redshift.util.RedshiftProperties,com.amazon.redshift.core.RedshiftJDBCSettings,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.IamHelper: void setIAMCredentials(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazon.redshift.logger.RedshiftLogger,java.lang.String)>
+<com.amazon.redshift.core.IamHelper: void setClusterCredentials(com.amazonaws.auth.AWSCredentialsProvider,com.amazon.redshift.core.RedshiftJDBCSettings,com.amazon.redshift.logger.RedshiftLogger,com.amazon.redshift.core.IamHelper$CredentialProviderType,boolean,int)>
+<com.amazon.redshift.core.IamHelper: void callDescribeClustersAPIForV2(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazonaws.services.redshift.AmazonRedshiftClient,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.IamHelper: void callDescribeClustersAPIForV1(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazonaws.services.redshift.AmazonRedshift,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.IamHelper: void callDescribeCustomDomainNameAssociationsAPIForV2(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazonaws.services.redshift.AmazonRedshiftClient,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.IamHelper: void callDescribeCustomDomainNameAssociationsAPIForV1(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazonaws.services.redshift.AmazonRedshift,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.IamHelper: com.amazonaws.services.redshift.model.GetClusterCredentialsResult getClusterCredentialsResult(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazonaws.services.redshift.AmazonRedshift,com.amazon.redshift.logger.RedshiftLogger,com.amazon.redshift.core.IamHelper$CredentialProviderType,boolean)>
+<com.amazon.redshift.core.IamHelper: com.amazonaws.services.redshift.model.GetClusterCredentialsRequest constructRequestForGetClusterCredentials(com.amazon.redshift.core.RedshiftJDBCSettings,boolean,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.IamHelper: com.amazonaws.services.redshift.model.GetClusterCredentialsResult makeGetClusterCredentialsAPICall(com.amazonaws.services.redshift.model.GetClusterCredentialsRequest,com.amazonaws.services.redshift.model.GetClusterCredentialsResult,com.amazonaws.services.redshift.AmazonRedshift,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.IamHelper: com.amazonaws.services.redshift.model.GetClusterCredentialsWithIAMResult getClusterCredentialsResultV2(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazonaws.services.redshift.AmazonRedshiftClient,com.amazon.redshift.logger.RedshiftLogger,com.amazon.redshift.core.IamHelper$CredentialProviderType,boolean,com.amazonaws.auth.AWSCredentialsProvider,int)>
+<com.amazon.redshift.core.IamHelper: com.amazonaws.services.redshift.model.GetClusterCredentialsWithIAMRequest constructRequestForGetClusterCredentialsWithIAM(com.amazon.redshift.core.RedshiftJDBCSettings,boolean,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.IamHelper: com.amazonaws.services.redshift.model.GetClusterCredentialsWithIAMResult makeGetClusterCredentialsWithIAMAPICall(com.amazonaws.services.redshift.model.GetClusterCredentialsWithIAMRequest,com.amazonaws.services.redshift.model.GetClusterCredentialsWithIAMResult,com.amazonaws.services.redshift.AmazonRedshiftClient,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.core.IamHelper: com.amazonaws.client.builder.AwsClientBuilder setBuilderConfiguration(com.amazon.redshift.core.RedshiftJDBCSettings,com.amazon.redshift.logger.RedshiftLogger,com.amazonaws.client.builder.AwsClientBuilder)>
+<com.amazon.redshift.plugin.utils.CheckUtils: void checkMissingAndThrows(java.lang.String,java.lang.String)>
+<com.amazon.redshift.plugin.utils.RequestUtils: com.amazonaws.services.securitytoken.AWSSecurityTokenService buildSts(java.lang.String,java.lang.String,com.amazonaws.services.securitytoken.AWSSecurityTokenServiceClientBuilder,com.amazonaws.auth.AWSCredentialsProvider,com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.plugin.utils.RequestUtils: com.amazonaws.ClientConfiguration getProxyClientConfig(com.amazon.redshift.logger.RedshiftLogger)>
+<com.amazon.redshift.plugin.BrowserIdcAuthPlugin$1: java.lang.Object apply(java.util.List)>
+<com.amazon.redshift.plugin.AdfsCredentialsProvider: java.lang.String getSamlAssertion()>
+<com.amazon.redshift.plugin.AdfsCredentialsProvider: java.lang.String windowsIntegratedAuthentication()>
+<com.amazon.redshift.plugin.AdfsCredentialsProvider: java.lang.String formBasedAuthentication()>
+<com.amazon.redshift.plugin.AdfsCredentialsProvider: java.io.File extractExecutable()>
+<com.amazon.redshift.plugin.CommonCredentialsProvider: void refresh()>
+<com.amazon.redshift.plugin.CommonCredentialsProvider: java.lang.String getIdpToken()>
+<com.amazon.redshift.plugin.IdpTokenAuthPlugin: void checkRequiredParameters()>
+<com.amazon.redshift.plugin.BrowserIdcAuthPlugin: com.amazon.redshift.NativeTokenHolder getIdcToken()>
+<com.amazon.redshift.plugin.BrowserIdcAuthPlugin: void checkRequiredParameters()>
+<com.amazon.redshift.plugin.BrowserIdcAuthPlugin: void addParameter(java.lang.String,java.lang.String)>
+<com.amazon.redshift.plugin.BrowserIdcAuthPlugin: com.amazonaws.services.ssooidc.model.RegisterClientResult getRegisterClientResult()>
+<com.amazon.redshift.plugin.BrowserIdcAuthPlugin: com.amazonaws.services.ssooidc.model.CreateTokenResult fetchTokenResult(com.amazonaws.services.ssooidc.model.RegisterClientResult,java.lang.String,java.lang.String)>
+<com.amazon.redshift.plugin.BrowserIdcAuthPlugin: com.amazonaws.services.ssooidc.model.CreateTokenResult getCreateTokenResult(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+<com.amazon.redshift.plugin.BrowserIdcAuthPlugin: com.amazon.redshift.NativeTokenHolder processCreateTokenResult(com.amazonaws.services.ssooidc.model.CreateTokenResult)>
+<com.amazon.redshift.plugin.BrowserIdcAuthPlugin: void openBrowser(java.lang.String,java.lang.String,com.amazonaws.services.ssooidc.model.RegisterClientResult)>
+<com.amazon.redshift.plugin.BrowserIdcAuthPlugin: boolean isCachedRegisterClientResultValid(com.amazonaws.services.ssooidc.model.RegisterClientResult)>
+<com.amazon.redshift.plugin.SamlCredentialsProvider: com.amazon.redshift.CredentialsHolder getCredentials()>
+<com.amazon.redshift.plugin.SamlCredentialsProvider: void refresh()>
+<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getIdpToken()>
+<com.amazon.redshift.plugin.SamlCredentialsProvider: void checkRequiredParameters()>
+<com.amazon.redshift.plugin.BrowserAzureCredentialsProvider: java.lang.String extractSamlAssertion(java.lang.String)>
+<com.amazon.redshift.plugin.BrowserAzureCredentialsProvider$1: java.lang.Object apply(java.util.List)>
+<com.amazon.redshift.plugin.PingCredentialsProvider: java.lang.String getSamlAssertion()>
+<com.amazon.redshift.plugin.AzureCredentialsProvider: java.lang.String getSamlAssertion()>
+<com.amazon.redshift.plugin.AzureCredentialsProvider: java.lang.String azureOauthBasedAuthentication()>
+<com.amazon.redshift.plugin.BrowserAzureOAuth2CredentialsProvider: java.lang.String extractJwtAssertion(java.lang.String)>
+<com.amazon.redshift.plugin.OktaCredentialsProvider: java.lang.String getSamlAssertion()>
+<com.amazon.redshift.plugin.OktaCredentialsProvider: java.lang.String oktaAuthentication(org.apache.http.impl.client.CloseableHttpClient)>
+<com.amazon.redshift.plugin.OktaCredentialsProvider: java.lang.String handleSamlAssertion(org.apache.http.impl.client.CloseableHttpClient,java.lang.String)>
+<com.amazon.redshift.CredentialsHolder: java.lang.String getAWSAccessKeyId()>
+<com.amazon.redshift.CredentialsHolder: java.lang.String getAWSSecretKey()>
+<com.mongodb.internal.authentication.AwsSdkV1CredentialSupplier: void <init>()>
+<com.mongodb.internal.authentication.AwsSdkV1CredentialSupplier: com.mongodb.AwsCredential get()>
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r58 = virtualinvoke $r54.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r10 = interfaceinvoke r110.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r11 = interfaceinvoke r110.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+interfaceinvoke $r30.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r31, $r27)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r19 = virtualinvoke $r25.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r9)
+不确定调用数： 12
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r9, $r21)
+不确定调用数： 11
+interfaceinvoke $r7.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r8, $r5)
+不确定调用数： 11
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r41 = interfaceinvoke $r40.<java.util.Map: java.lang.Object get(java.lang.Object)>($r39)
+不确定调用数： 12
+interfaceinvoke $r31.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r44)
+不确定调用数： 11
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r44, r45)
+不确定调用数： 11
+$r41 = interfaceinvoke $r40.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r26 = interfaceinvoke r25.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r28 = interfaceinvoke r25.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+virtualinvoke $r6.<java.io.InputStream: void close()>()
+不确定调用数： 11
+$r3 = virtualinvoke $r2.<jdk.internal.loader.Resource: java.net.URL getURL()>()
+不确定调用数： 6
+$r6 = interfaceinvoke r5.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r8 = interfaceinvoke r5.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+$r3 = virtualinvoke $r2.<jdk.internal.loader.Resource: java.net.URL getURL()>()
+不确定调用数： 6
+$r3 = virtualinvoke $r2.<jdk.internal.loader.Resource: java.net.URL getURL()>()
+不确定调用数： 6
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r58 = virtualinvoke $r54.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r10 = interfaceinvoke r110.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r11 = interfaceinvoke r110.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke $r30.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r31, $r27)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r19 = virtualinvoke $r25.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r9)
+不确定调用数： 12
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r9, $r21)
+不确定调用数： 11
+interfaceinvoke $r7.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r8, $r5)
+不确定调用数： 11
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r9)
+不确定调用数： 12
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r9, $r21)
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r9)
+不确定调用数： 12
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r9, $r21)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$z1 = interfaceinvoke $r1.<java.util.Set: boolean contains(java.lang.Object)>(r0)
+不确定调用数： 6
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r6 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>(r2)
+不确定调用数： 12
+$r4 = staticinvoke <java.security.AccessController: java.lang.Object doPrivileged(java.security.PrivilegedAction)>($r3)
+不确定调用数： 27
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r0)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r6 = interfaceinvoke $r5.<java.util.Map: java.lang.Object computeIfAbsent(java.lang.Object,java.util.function.Function)>(r1, $r4)
+不确定调用数： 8
+$r5 = interfaceinvoke $r3.<java.lang.module.ModuleReader: java.util.Optional find(java.lang.String)>($r4)
+不确定调用数： 6
+$r8 = interfaceinvoke $r7.<java.lang.module.ModuleReader: java.util.Optional find(java.lang.String)>(r4)
+不确定调用数： 6
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object computeIfAbsent(java.lang.Object,java.util.function.Function)>(r0, $r1)
+不确定调用数： 8
+$r1 = interfaceinvoke r0.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r6 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r5)
+不确定调用数： 12
+$r2 = interfaceinvoke $r1.<java.util.Map: java.lang.Object get(java.lang.Object)>(r0)
+不确定调用数： 12
+interfaceinvoke $r1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r2, r0)
+不确定调用数： 11
+interfaceinvoke $r11.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r12, $r10)
+不确定调用数： 11
+$z0 = interfaceinvoke $r1.<java.util.Map: boolean containsKey(java.lang.Object)>(r0)
+不确定调用数： 10
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r0)
+不确定调用数： 12
+$r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Object clone()>()
+不确定调用数： 64
+$r5 = virtualinvoke $r2.<jdk.internal.loader.Resource: java.io.InputStream getInputStream()>()
+不确定调用数： 6
+$r5 = virtualinvoke $r2.<jdk.internal.loader.Resource: java.io.InputStream getInputStream()>()
+不确定调用数： 6
+$r5 = virtualinvoke $r2.<jdk.internal.loader.Resource: java.io.InputStream getInputStream()>()
+不确定调用数： 6
+$r5 = virtualinvoke $r2.<jdk.internal.loader.Resource: java.io.InputStream getInputStream()>()
+不确定调用数： 6
+$r5 = virtualinvoke $r2.<jdk.internal.loader.Resource: java.io.InputStream getInputStream()>()
+不确定调用数： 6
+$r5 = virtualinvoke $r2.<jdk.internal.loader.Resource: java.io.InputStream getInputStream()>()
+不确定调用数： 6
+$r5 = virtualinvoke $r2.<jdk.internal.loader.Resource: java.io.InputStream getInputStream()>()
+不确定调用数： 6
+$r10 = interfaceinvoke $r9.<java.util.Map: java.lang.Object get(java.lang.Object)>(r0)
+不确定调用数： 12
+$r4 = interfaceinvoke $r2.<java.util.Map: java.lang.Object computeIfAbsent(java.lang.Object,java.util.function.Function)>(r1, $r3)
+不确定调用数： 8
+$r5 = interfaceinvoke $r3.<java.lang.module.ModuleReader: java.util.Optional find(java.lang.String)>($r4)
+不确定调用数： 6
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r11 = interfaceinvoke $r10.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r7 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r14 = interfaceinvoke $r13.<java.util.Map: java.lang.Object get(java.lang.Object)>($r12)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r18)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, r19)
+不确定调用数： 11
+$r16 = interfaceinvoke $r15.<java.util.Map: java.lang.Object get(java.lang.Object)>($r14)
+不确定调用数： 12
+interfaceinvoke $r6.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r20)
+不确定调用数： 11
+interfaceinvoke $r4.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r20, r21)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r58 = virtualinvoke $r54.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r10 = interfaceinvoke r110.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r11 = interfaceinvoke r110.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke $r30.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r31, $r27)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r14 = virtualinvoke $r10.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r25 = interfaceinvoke $r4.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r23 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r21 = interfaceinvoke $r6.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r18 = interfaceinvoke $r28.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r8 = interfaceinvoke $r29.<java.util.List: java.lang.Object get(int)>(0)
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r9)
+不确定调用数： 12
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r9, $r21)
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r9)
+不确定调用数： 12
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r9, $r21)
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r9)
+不确定调用数： 12
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r9, $r21)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+$r3 = interfaceinvoke $r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r134 = interfaceinvoke $r130.<java.util.Map: java.lang.Object get(java.lang.Object)>($r133)
+不确定调用数： 12
+$r111 = interfaceinvoke $r4.<java.util.Map: java.util.Set keySet()>()
+不确定调用数： 12
+$r5 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+不确定调用数： 12
+$r110 = interfaceinvoke $r4.<java.util.Map: java.lang.Object get(java.lang.Object)>($r109)
+不确定调用数： 12
+$r47 = interfaceinvoke $r46.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+interfaceinvoke $r84.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r82)
+不确定调用数： 11
+interfaceinvoke $r9.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, r166)
+不确定调用数： 11
+$r51 = interfaceinvoke $r50.<java.util.Map: java.util.Set entrySet()>()
+不确定调用数： 12
+$r64 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r69 = interfaceinvoke r164.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r67, r70)
+不确定调用数： 6
+$r54 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r59 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getKey()>()
+不确定调用数： 6
+$r61 = interfaceinvoke r165.<java.util.Map$Entry: java.lang.Object getValue()>()
+不确定调用数： 6
+interfaceinvoke r163.<com.amazon.redshift.IPlugin: void addParameter(java.lang.String,java.lang.String)>($r60, $r62)
+不确定调用数： 6
+$r31 = virtualinvoke $r27.<java.lang.Exception: java.lang.String getMessage()>()
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+$r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r9)
+不确定调用数： 12
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r9, $r21)
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r9)
+不确定调用数： 12
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r9, $r21)
+不确定调用数： 11
+$r11 = interfaceinvoke $r10.<java.util.Map: java.lang.Object get(java.lang.Object)>($r9)
+不确定调用数： 12
+interfaceinvoke $r22.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r9, $r21)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11
+$r1 = virtualinvoke r0.<com.amazon.redshift.plugin.SamlCredentialsProvider: java.lang.String getPluginSpecificCacheKey()>()
+不确定调用数： 6
+$r17 = interfaceinvoke $r16.<java.util.Map: java.lang.Object get(java.lang.Object)>($r15)
+不确定调用数： 12
+$r7 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>($r6)
+不确定调用数： 12
+interfaceinvoke $r21.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r18, $r19)
+不确定调用数： 11

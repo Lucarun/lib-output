@@ -1,0 +1,10 @@
+[
+    {
+        "callStackMethods": [
+            "<com.amazon.redshift.plugin.BrowserIdcAuthPlugin: com.amazonaws.services.ssooidc.model.RegisterClientResult getRegisterClientResult()>",
+            "<com.example.demo.Instrument: void sink2(java.lang.Object)>"
+        ],
+        "hasDataFlow_file1": true,
+        "hasDataFlow_file2": false
+    }
+]
